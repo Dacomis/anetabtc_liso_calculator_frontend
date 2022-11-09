@@ -1,4 +1,4 @@
-import NumberFormat from "react-number-format";
+import NumericFormat from "react-number-format";
 import { QuestionMarkCircle } from "./images/QuestionMarkCircle";
 
 const LISOII = ({ LISOIIRewards }: any) => {
@@ -13,7 +13,7 @@ const LISOII = ({ LISOIIRewards }: any) => {
         <label className="w-6/12 text-base text-orange-900/70 md:w-11/12">
           Angel Boosted Base Rewards:
         </label>
-        <NumberFormat
+        <NumericFormat
           decimalScale={0}
           thousandSeparator
           suffix={" cNETA"}
@@ -57,7 +57,7 @@ const LISOII = ({ LISOIIRewards }: any) => {
         <label className="w-6/12 text-base text-orange-900/70 md:w-11/12">
           Long Term Rewards:
         </label>
-        <NumberFormat
+        <NumericFormat
           decimalScale={0}
           thousandSeparator
           suffix={" cNETA"}
@@ -87,7 +87,7 @@ const LISOII = ({ LISOIIRewards }: any) => {
         <label className="w-6/12 text-base text-orange-900/70 md:w-11/12">
           Angel Boosted Long Term Rewards:
         </label>
-        <NumberFormat
+        <NumericFormat
           decimalScale={0}
           thousandSeparator
           suffix={" cNETA"}
@@ -136,7 +136,7 @@ const LISOII = ({ LISOIIRewards }: any) => {
         <label className="w-6/12 text-base text-orange-900/70 md:w-11/12">
           <strong>Staking Rewards Total:</strong>
         </label>
-        <NumberFormat
+        <NumericFormat
           decimalScale={0}
           thousandSeparator
           suffix={" cNETA"}

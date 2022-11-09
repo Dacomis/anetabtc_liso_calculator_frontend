@@ -7,7 +7,7 @@ import {
   isManualCalculationFormInvalid,
 } from "./utils/Utils";
 import { useEffect, useState } from "react";
-import NumberFormat from "react-number-format";
+import NumericFormat from "react-number-format";
 
 type Props = {
   currentEpoch: number;
@@ -58,7 +58,7 @@ const ManualCalculationForm = ({
       <div className="text-lg text-cyan-900 placeholder:text-cyan-900/80">
         <fieldset className="mx-auto mb-4 flex w-10/12 flex-col md:w-96 lg:w-[300px]">
           <label className="text-base text-cyan-900/80">Staked ADA:</label>
-          <NumberFormat
+          <NumericFormat
             decimalScale={0}
             thousandSeparator
             suffix={" ADA"}
@@ -76,7 +76,7 @@ const ManualCalculationForm = ({
           <label className="text-base text-cyan-900/80">
             Epoch in which the staking started:
           </label>
-          <NumberFormat
+          <NumericFormat
             decimalScale={0}
             className="input h-8 overflow-clip truncate rounded-lg border border-cyan-50 bg-teal-100/75 px-2 focus:border-cyan-100 focus:shadow-cyan-800/80 focus:outline-none md:w-96 lg:w-[300px]  2xl:w-[500px]"
             prefix={"Epoch "}
@@ -149,7 +149,7 @@ const ManualCalculationForm = ({
           <label className="text-base text-cyan-900/80">
             Highest Angel Ranking (by tier):
           </label>
-          <NumberFormat
+          <NumericFormat
             decimalScale={0}
             className="input h-8 overflow-clip truncate rounded-lg border border-cyan-50 bg-teal-100/75 px-2 focus:border-cyan-100 focus:shadow-cyan-800/80 focus:outline-none md:w-96 lg:w-[300px]  2xl:w-[500px]"
             value={angelRank}

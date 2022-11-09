@@ -8,7 +8,7 @@ import ManualCalculationForm from "./ManualCalculationForm";
 import LISOI from "./LISOIRewards";
 import LISOII from "./LISOIIRewards";
 import { ILISOIIRewards, ILISOIRewards } from "./interfaces/interfaces";
-import NumberFormat from "react-number-format";
+import NumericFormat from "react-number-format";
 import StakingAddressForm from "./StakingAddressForm";
 
 function App() {
@@ -185,7 +185,7 @@ function App() {
           ></img>
           <div className="flex flex-col">
             <span className="text-anetaGold">
-              <NumberFormat
+              <NumericFormat
                 decimalScale={0}
                 thousandSeparator
                 value={
