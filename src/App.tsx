@@ -5,13 +5,11 @@ import TotalADAStaked from "./TotalADAStaked";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import ManualCalculationForm from "./ManualCalculationForm";
-import { getPort } from "./utils/Utils";
 import LISOI from "./LISOIRewards";
 import LISOII from "./LISOIIRewards";
 import { ILISOIIRewards, ILISOIRewards } from "./interfaces/interfaces";
 import NumberFormat from "react-number-format";
 import StakingAddressForm from "./StakingAddressForm";
-import { createModuleResolutionCache } from "typescript";
 
 function App() {
   const [currentEpoch, setCurrentEpoch] = useState(0);
@@ -37,11 +35,6 @@ function App() {
   const [historyError, setHistoryError] = useState(null);
   const [isHistoryLoaded, setIsHistoryLoaded] = useState(false);
   const [history, setHistory] = useState([]);
-
-  //angels
-  const [angels, setAngels] = useState(null);
-  const angelsPolicyID =
-    "af267bd857e9d78fdb5fa05e91a342907518e30b0211cdf2b9c7cd00";
 
   useEffect(() => {
     fetch(`http://anetabtc-liso-calculator-backend.deta.dev/history`)
